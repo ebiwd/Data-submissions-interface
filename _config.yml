@@ -1,9 +1,9 @@
 # Site settings
-name: EBI Jekyll Boilerplate
+name: Data submissions interface
 group: EMBL-EBI Web Development
 email: noreply@ebi.ac.uk
 domain: //ebiwd.github.io
-baseurl: /EBI-Boilerplate-Jekyll
+baseurl: /Data-submissions-interface
 permalink: pretty
 
 # Add custom CSS / JS here
@@ -16,7 +16,7 @@ permalink: pretty
 ga_code: 'UA-XXXXX-X'
 
 # root repo for this project
-repo:        "https://github.com/ebiwd/EBI-Pattern-library"
+repo:        "https://github.com/ebiwd/Data-submissions-interface"
 source:      .
 destination: ./_site
 exclude:     [node_modules, .sass-cache, gulpfile.js, package.json, HOWTO.md]

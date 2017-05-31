@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Welcome to the first draft of the Jekyll implementation"
+title: "In progress"
 date: 2016-05-24
 ---
 
