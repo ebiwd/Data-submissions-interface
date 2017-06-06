@@ -7,8 +7,8 @@ baseurl: /Data-submissions-interface
 permalink: pretty
 
 # Add custom CSS / JS here
-# custom_css:
-# - "{{site.baseurl}}/static/css/YOUR-CSS-COMPONENTS.css"
+custom_css:
+- "/Data-submissions-interface/static/app.css"
 # - "{{site.baseurl}}/static/css/ANOTHER-CSS-COMPONENTS.css"
 # custom_js:
 # - "{{site.baseurl}}/static/js/YOUR-CSS-COMPONENTS.js"
@@ -28,5 +28,5 @@ highlighter: rouge
 
 # Allow redirects
 # https://help.github.com/articles/redirects-on-github-pages/
-gems:
-  - jekyll-redirect-from
+# gems:
+#   - jekyll-redirect-from

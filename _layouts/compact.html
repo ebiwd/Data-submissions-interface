@@ -5,7 +5,7 @@
     {% include local_masthead.html %}
     <div id="content" role="main">
       <div data-sticky-container>
-        <div id="masthead" class="masthead compact-for-data compact-disabled" data-sticky data-sticky-on="large" data-top-anchor="main-content-area:top" data-btm-anchor="main-content-area:bottom">
+        <div id="masthead" class="masthead compact-for-data" data-sticky data-sticky-on="large" data-top-anchor="main-content-area:top" data-btm-anchor="main-content-area:bottom">
           <div class="masthead-inner row">
             <!-- local-title -->
             <div class="columns medium-7 large-6" id="local-title">
@@ -26,34 +26,6 @@
                 {% assign group = 'in_local_navigation' %}
                 {% include navigation_list.html %}
               </ul>
-              <!-- <ul class="menu dropdown float-right" data-dropdown-menu data-description="functional">
-                <li class="functional"><a href="#"><i class="icon icon-generic" data-icon="d"></i> Share this</a>
-                  <ul class="menu js">
-                    <li><a href="#">Item 1A Loooong</a></li>
-                    <li>
-                      <a href='#'> Item 1 sub</a>
-                      <ul class='menu'>
-                        <li><a href='#'>Item 1 subA</a></li>
-                        <li><a href='#'>Item 1 subB</a></li>
-                        <li>
-                          <a href='#'> Item 1 sub</a>
-                          <ul class='menu'>
-                            <li><a href='#'>Item 1 subA</a></li>
-                            <li><a href='#'>Item 1 subB</a></li>
-                          </ul>
-                        </li>
-                        <li>
-                          <a href='#'> Item 1 sub</a>
-                          <ul class='menu'>
-                            <li><a href='#'>Item 1 subA</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Item 1B</a></li>
-                  </ul>
-
-              </ul> -->
             </nav>
             <!-- /local-nav -->
           </div>
@@ -62,18 +34,16 @@
 
       <section class="row" id="main-content-area">
         <!-- Your menu structure should make a breadcrumb redundant, but if a breadcrump is needed uncomment the below -->
-        <!--
+
         <nav aria-label="You are here:" role="navigation">
           <ul class="breadcrumbs">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Parent</a></li>
-            <li class="disabled">Disabled</li>
             <li>
-              <span class="show-for-sr">Current: </span> This page
+              <span class="show-for-sr">Current: </span> {{page.title}}
             </li>
           </ul>
         </nav>
-        -->
+
         <div class="medium-9 columns">
         {{ content }}
         </div>
