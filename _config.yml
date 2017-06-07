@@ -1,5 +1,5 @@
 # Site settings
-name: Data submissions interface
+name: Data submission
 group: EMBL-EBI Web Development
 email: noreply@ebi.ac.uk
 domain: //ebiwd.github.io
@@ -10,8 +10,8 @@ permalink: pretty
 custom_css:
 - "/Data-submissions-interface/static/app.css"
 # - "{{site.baseurl}}/static/css/ANOTHER-CSS-COMPONENTS.css"
-# custom_js:
-# - "{{site.baseurl}}/static/js/YOUR-CSS-COMPONENTS.js"
+custom_js:
+- "/Data-submissions-interface/static/app.js"
 # - "{{site.baseurl}}/static/js/ANOTHER-CSS-COMPONENTS.js"
 ga_code: 'UA-XXXXX-X'
 
