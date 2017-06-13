@@ -8,13 +8,12 @@
         <div id="masthead" class="masthead compact-for-data compact-disabled" data-sticky data-sticky-on="large" data-top-anchor="main-content-area:top" data-btm-anchor="main-content-area:bottom">
           <div class="masthead-inner row">
             <!-- local-title -->
-            <div class="columns medium-7 large-6" id="local-title">
+            <div class="columns medium-7 large-6 padding-top-xlarge" id="local-title">
               <h1><a href="{{ site.domain }}{{ site.baseurl }}" title="Back to {{ site.name }} homepage">{{ site.name }}</a></h1>
             </div>
             <!-- /local-title -->
             <!-- local-nav -->
             <nav class="column large-6">
-              <ul id="local-nav" class="dropdown menu float-left" data-description="navigational" data-dropdown-menu>
                 {% comment %}
                 We construct the site naviagion by loading a list of the site's pages
                 and filtering to just those with the front matter of:
@@ -25,7 +24,6 @@
                 {% assign navigation_list = site.pages | sort:"order" %}
                 {% assign group = 'in_local_navigation' %}
                 {% include navigation_list.html %}
-              </ul>
               <!-- <ul class="menu dropdown float-right" data-dropdown-menu data-description="functional">
                 <li class="functional"><a href="#"><i class="icon icon-generic" data-icon="d"></i> Share this</a>
                   <ul class="menu js">
@@ -74,21 +72,21 @@
           </ul>
         </nav>
         -->
-        <div class="medium-9 columns">
+        <div class="medium-12 columns">
         {{ content }}
         </div>
-        <div class="medium-3 columns sidebar" data-sticky-container>
+        <!-- <div class="medium-3 columns sidebar" data-sticky-container>
           {% include sidebar.html %}
-        </div>
+        </div> -->
       </section>
       <!-- Optional local footer (insert citation / project-specific copyright / etc here -->
-      <!--
-        <div id="local-footer" class="local-footer">
-          <div class="row">
-            <span class="reference">How to reference this page: ...</span>
-          </div>
+
+      <div id="local-footer" class="local-footer">
+        <div class="row">
+          <cite class="cite">The EMBL-EBI Data Submission thingy is a thing that does things and is funded by things.</cite>
         </div>
-      -->
+      </div>
+
       <!-- End optional local footer -->
     </div><!-- /.container -->
     {% include footer.html %}

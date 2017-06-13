@@ -1,3 +1,34 @@
+/* customise tabs */
+.tabs-content {
+  color: #333;
+}
+.tabs-content,
+.tabs.tabs-clear { border: none; }
+.tabs.tabs-clear .tabs-title > a,
+.tabs.tabs-clear .tabs-title > a[aria-selected='false'] {
+  border-bottom: 2px solid #AAA;
+}
+.tabs.tabs-clear .tabs-title > a:focus,
+.tabs.tabs-clear .tabs-title > a[aria-selected='true'] {
+  background: none;
+  border-bottom: 2px solid #FFF;
+}
+.tabs.tabs-clear .tabs-title > a h4,
+.tabs.tabs-clear .tabs-title > a[aria-selected='false'] h4 {
+  /*font-size: .8rem;
+  top: 1rem;
+  position: relative;*/
+  opacity: .7;
+}
+
+.tabs.tabs-clear .tabs-title > a:focus h4,
+.tabs.tabs-clear .tabs-title > a[aria-selected='true'] h4 {
+  /*font-size: 1.5rem;
+  top: 0rem;*/
+  opacity: 1;
+  color: #222;
+}
+
 /* /websites/patterns/masthead-compact.html */
 .masthead.compact-for-data .masthead-inner {
   padding-top: .5rem;

@@ -1,29 +1,65 @@
 ---
-layout: compact
-title: New submission
+layout: default
+title: New
+long-title: Create a new submission
 group: "in_local_navigation"
-order: 2
+order: 1
 ---
+
+<h2 class="padding-top-xlarge">{{page.long-title}}</h2>
+
+<!-- <div class="column">
+  <ul class="menu">
+    <li><a class="active" href="#">About your data</a></li>
+    <li><a href="#">Multiple types of data</a></li>
+    <li><a href="#">Item 3</a></li>
+    <li><a href="#">Item 4</a></li>
+  </ul>
+</div> -->
+
+
 <form data-abide novalidate class="conditional-form">
-  <span class="tag">About your data</span> <span class="tag secondary-color white-background">Multiple types of data</span>
   <fieldset required class="large-form padding-bottom-large padding-top-large">
-    <legend>Is your study based on human research subjects, requiring controlled access?</legend>
-    <input type="radio" name="pokemon" value="1" id="humanYes" required><label for="humanYes">Yes</label>
-    <input type="radio" name="pokemon" value="1" id="humanNo"><label for="humanNo">No</label>
+    <legend>Is your study on human research subjects?</legend>
+    <input type="radio" name="human" value="1" id="humanYes" required><label for="humanYes">Yes</label>
+    <input type="radio" name="human" value="1" id="humanNo"><label for="humanNo">No</label>
   </fieldset>
 
-  <div class="conditional-div hidden" data-condition="humanYes:checked" data-condition-val="1">
-    <p>Please create:</p>
-    <label>Project name
-      <input type="text" placeholder="e.g." required pattern="alpha">
-      <span class="form-error">
-        Yo, you had better fill this out, it's required.
-      </span>
-    </label>
-  </div>
+  <!-- Show if human = yes -->
+  <fieldset class="large-form padding-bottom-large padding-top-large conditional-div hidden" data-condition="humanYes:checked" data-condition-val="1">
+    <legend>Does it require controlled access once it becomes public?</legend>
+    <input type="radio" name="controlled" value="1" id="controlledYes" required><label for="controlledYes">Yes</label>
+    <input type="radio" name="controlled" value="1" id="controlledNo"><label for="controlledNo">No</label>
+  </fieldset>
+
+  <!-- Show if human = no -->
   <div class="conditional-div hidden" data-condition="humanNo:checked" data-condition-val="1">
-    Please proceed.
-  </div>
+      <p>Please create a project to collect your different data studies under:</p>
+      <label>Project name for multiple studies
+        <input type="text" placeholder="e.g. “Parallelism in Fish”" required pattern="alpha">
+        <span class="form-error">
+          Yo, you had better fill this out, it's required.
+        </span>
+      </label>
+
+      <label>Project description
+        <textarea rows="5" placeholder="..." required pattern="alpha"></textarea>
+        <span class="form-error">
+          Yo, you had better fill this out, it's required.
+        </span>
+      </label>
+
+
+
+    </div>
+    <div class="conditional-div hidden" data-condition="humanNo:checked" data-condition-val="1">
+      Please proceed.
+    </div>
+
+
+
+
+
 
   <div data-abide-error class="alert callout" style="display: none;">
     <p><i class="fi-alert"></i> There are some errors in your form.</p>

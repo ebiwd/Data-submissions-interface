@@ -1,6 +1,5 @@
 // websites/patterns/conditional-elements.html
-
-$( document ).ready(function() {
+$(document).ready(function() {
   function conditionalElementsEBI(watchedParentClass) {
     var watchedParentClass = watchedParentClass || '.conditional-form';
 

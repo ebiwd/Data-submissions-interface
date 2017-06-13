@@ -8,13 +8,12 @@
         <div id="masthead" class="masthead compact-for-data" data-sticky data-sticky-on="large" data-top-anchor="main-content-area:top" data-btm-anchor="main-content-area:bottom">
           <div class="masthead-inner row">
             <!-- local-title -->
-            <div class="columns medium-7 large-6" id="local-title">
+            <div class="columns medium-7 large-4" id="local-title">
               <h1><a href="{{ site.domain }}{{ site.baseurl }}" title="Back to {{ site.name }} homepage">{{ site.name }}</a></h1>
             </div>
             <!-- /local-title -->
             <!-- local-nav -->
-            <nav class="column large-6">
-              <ul id="local-nav" class="dropdown menu float-left" data-description="navigational" data-dropdown-menu>
+            <nav class="column large-8">
                 {% comment %}
                 We construct the site naviagion by loading a list of the site's pages
                 and filtering to just those with the front matter of:
@@ -25,7 +24,7 @@
                 {% assign navigation_list = site.pages | sort:"order" %}
                 {% assign group = 'in_local_navigation' %}
                 {% include navigation_list.html %}
-              </ul>
+
             </nav>
             <!-- /local-nav -->
           </div>
@@ -35,14 +34,14 @@
       <section class="row" id="main-content-area">
         <!-- Your menu structure should make a breadcrumb redundant, but if a breadcrump is needed uncomment the below -->
 
-        <nav aria-label="You are here:" role="navigation">
+        <!-- <nav aria-label="You are here:" role="navigation">
           <ul class="breadcrumbs">
             <li><a href="#">Home</a></li>
             <li>
               <span class="show-for-sr">Current: </span> {{page.title}}
             </li>
           </ul>
-        </nav>
+        </nav> -->
 
         <div class="medium-9 columns">
         {{ content }}
@@ -52,13 +51,13 @@
         </div>
       </section>
       <!-- Optional local footer (insert citation / project-specific copyright / etc here -->
-      <!--
+
         <div id="local-footer" class="local-footer">
           <div class="row">
-            <span class="reference">How to reference this page: ...</span>
+            <cite class="cite">The EMBL-EBI Data Submission thingy is a thing that does things and is funded by things.</cite>
           </div>
         </div>
-      -->
+
       <!-- End optional local footer -->
     </div><!-- /.container -->
     {% include footer.html %}

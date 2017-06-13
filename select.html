@@ -1,0 +1,67 @@
+---
+layout: compact
+title: Select box
+group: "in_local_navigation"
+order: 2
+---
+<span class="tag secondary-color white-background">About your data</span> <span class="tag">Multiple types of data</span>
+
+<form data-abide novalidate class="conditional-form">
+  <fieldset required class="large-form padding-bottom-large padding-top-large">
+    <legend>Are you submitting multiple types of experiment data within your project, e.g. array data and RNA-seq data?</legend>
+    <input type="radio" name="multiple" value="1" id="multipleYes" required><label for="multipleYes">Yes</label>
+    <input type="radio" name="multiple" value="1" id="multipleNo"><label for="multipleNo">No</label>
+  </fieldset>
+
+  <!-- Show if human = yes -->
+  <fieldset class="large-form padding-bottom-large padding-top-large conditional-div hidden" data-condition="multipleYes:checked" data-condition-val="1">
+    <legend>Please create a project to collect your different data studies under:</legend>
+    <label>Project name for multiple studies
+      <input type="text" placeholder="e.g. “Parallelism in Fish”" required pattern="alpha">
+      <span class="form-error">
+        Yo, you had better fill this out, it's required.
+      </span>
+    </label>
+
+    <label>Project description
+      <textarea rows="5" placeholder="..." required pattern="alpha"></textarea>
+      <span class="form-error">
+        Yo, you had better fill this out, it's required.
+      </span>
+    </label>
+
+  </fieldset>
+
+
+
+
+
+  <div data-abide-error class="alert callout" style="display: none;">
+    <p><i class="fi-alert"></i> There are some errors in your form.</p>
+  </div>
+  <a class="button secondary-color white-background" href="#">Save &amp; exit</a>
+  <button class="button readmore" type="submit" value="Submit">Save &amp; continue</button>
+</form>
+
+<label for="choices-multiple-remove-button">Demo</label>
+<select class="form-control" name="choices-multiple-remove-button" id="choices-multiple-remove-button" placeholder="This is a placeholder" multiple>
+<option value="Dropdown item 1" selected>Dropdown item 1</option>
+<option value="Dropdown item 2">Dropdown item 2</option>
+<option value="Dropdown item 3">Dropdown item 3</option>
+<option value="Dropdown item 4">Dropdown item 4</option>
+</select>
+
+
+<link rel="stylesheet" href="//wwwdev.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/libraries/Choices/assets/styles/css/choices.min.css">
+<script src="//wwwdev.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/libraries/Choices/assets/scripts/dist/choices.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var multipleCancelButton = new Choices('#choices-multiple-remove-button', {
+    delimiter: ',',
+    editItems: true,
+    maxItemCount: 5,
+    removeItemButton: true,
+  });
+});
+</script>
