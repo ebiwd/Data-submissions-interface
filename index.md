@@ -1,15 +1,15 @@
 ---
 layout: default
-title: Project home
-group: "not_in_local_navigation"
-order: 1
+title: Your dashboard
+group: "in_local_navigation"
+order: 0
 ---
 
 <div class="row">
-<div class="columns medium-3" markdown="1">
-<h2 class="inline-block padding-top-xlarge margin-bottom-none">Hi, Mae</h2>
+<div class="columns medium-3 intro-unit" markdown="1">
+<h2 class="inline-block margin-bottom-none">Hi, Mae</h2>
 
-In your account, you have [35 submissions](#) ([5 not submitted](#)) inside [10 projects](#) with [100 attached library items](#).
+<p class="lead" markdown="1">In your account, you have [35 submissions](#) ([5 not submitted](#)) inside [10 projects](#) with [100 attached library items](#).</p>
 
 When you make a submission you can associate it to a new project and attach new library items: <a href="#" class="button"><i class="icon icon-functional" data-icon="e"></i> Start a new submission</a><br/>
 
