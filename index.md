@@ -2,7 +2,7 @@
 layout: default
 title: Your dashboard
 group: "in_local_navigation"
-order: 0
+order: 2
 ---
 
 <div class="row">
@@ -55,9 +55,9 @@ When you make a submission you can create a new project to associate it with and
       <tbody>
       <tr>
         <td>2017.06.12</td>
-        <td><a href="#" class="no-underline">Name of submission item</a></td>
+        <td><a href="submissions/rad-sequencing/" class="no-underline">RAD sequencing study</a></td>
         <td><a href="#" class="no-underline">part of "Project name here"</a></td>
-        <td>In progress; <a class="readmore" href="#">edit now</a></td>
+        <td>In progress; <a class="readmore" href="submissions/rad-sequencing/">edit now</a></td>
       </tr>
       <tr>
         <td>2017.06.12</td>

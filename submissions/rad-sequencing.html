@@ -1,0 +1,109 @@
+---
+layout: compact
+title: RAD sequencing study
+long-title: RAD sequencing study
+group: "not_in_local_navigation"
+order: 1
+---
+
+<!-- <nav aria-label="You are here:" role="navigation">
+  <ul class="breadcrumbs">
+    <li><a href="#">Dashboard</a></li>
+    <li>
+      <span class="show-for-sr">Current: </span> {{page.title}}
+    </li>
+  </ul>
+</nav> -->
+
+<h2 class="padding-top-xlarge inline-block">{{page.long-title}}</h2>
+<small href="#" class="small secondary-color">part of <a href="#" class=""><i class="icon icon-functional" data-icon="e"></i> Parallelism in fish project</a></small>
+
+
+
+<!-- <i class="icon icon-functional" data-icon="<"></i>  -->
+<ul class="tabs" data-tabs id="example-tabs">
+  <li class="tabs-title is-active"><a href="#panelOverview">Overview</a></li>
+  <li class="tabs-title"><a href="#panelStudy">Study</a></li>
+  <li class="tabs-title"><a href="#panelData" aria-selected="true">Data files</a></li>
+  <li class="tabs-title"><a href="#panelSamples">Samples</a></li>
+  <li class="tabs-title"><a href="#panelContacts">Contacts</a></li>
+  <li class="tabs-title"><a href="#panelSubmit">Submit</a></li>
+</ul>
+
+<div class="tabs-content margin-bottom-xlarge clearfix" data-tabs-content="example-tabs">
+  <div class="tabs-panel is-active" id="panelOverview">
+    <div class="intro-unit columns">
+      <span class="label secondary-color">Status:
+        <span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="This submission is open for modification.">
+          In progress
+        </span>
+      </span>
+      <h2>Overview of this submission</h2>
+      <p class="lead">Submissions are divided up into four sections -- here are links to each area and an indicative progression of each.
+        <br/>You may complete the sections in any order you like.</p>
+    </div>
+
+    <div class="callout columns medium-10 medium-push-1 ebi-background white-color">
+      <h3 class="margin-bottom-none inline-block"><i class="icon icon-functional" data-icon="/"></i> All sections are complete</h3>
+      <p class="margin-left-xlarge inline-block">You can submit when ready. <a href="#" class="readmore">Go to the submit step</a></p>
+    </div>
+
+    <div class="medium-up-4">
+      <div class="column">
+        <h4>Study</h4>
+        <div class="progress" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
+          <span class="progress-meter" style="width: 25%">
+            <p class="progress-meter-text">25%</p>
+          </span>
+        </div>
+        <a class="readmore small" href="#panelSubmit">Go to this section</a>
+      </div>
+
+      <div class="column">
+        <h4>Data files</h4>
+        <div class="progress" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
+          <span class="progress-meter" style="width: 25%">
+            <p class="progress-meter-text">25%</p>
+          </span>
+        </div>
+      </div>
+
+      <div class="column">
+        <h4>Samples</h4>
+        <div class="progress" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
+          <span class="progress-meter" style="width: 25%">
+            <p class="progress-meter-text">25%</p>
+          </span>
+        </div>
+      </div>
+
+      <div class="column">
+        <h4>Contacts</h4>
+        <div class="progress" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="Not started" aria-valuemax="100">
+          <span class="progress-meter" style="width: 1%">
+            <p class="progress-meter-text">Not started</p>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tabs-panel" id="panelStudy">
+    {% include submission/study.html %}
+    test
+  </div>
+  <div class="tabs-panel" id="panelData">
+    <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+  </div>
+  <div class="tabs-panel" id="panelSamples">
+    <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+  </div>
+  <div class="tabs-panel" id="panelContacts">
+    <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+  </div>
+  <div class="tabs-panel" id="panelSubmit">
+    <p>You cannot submit until you complete each of the four areas.</p>
+    <a class="button disabled" href="#" aria-disabled>Submit</a>
+  </div>
+</div>
+
+<br/><br/>
