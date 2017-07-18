@@ -6,10 +6,10 @@ var gutil = require('gulp-util');
 // invoke jekyll 
 // https://aaronlasseigne.com/2016/02/03/using-gulp-with-jekyll/
 gulp.task('jekyll', () => {
-  const jekyll = child.spawn('jekyll', ['serve',
-    '--watch',
-    '--incremental',
-    '--drafts'
+  const jekyll = child.spawn('jekyll', ['build',
+    '--watch'
+    // '--incremental',
+    // '--drafts'
   ]);
 
   const jekyllLogger = (buffer) => {

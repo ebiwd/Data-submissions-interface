@@ -1,0 +1,72 @@
+---
+layout: default
+title: New submission
+long-title: New data submission
+group: "not_in_local_navigation"
+order: 1
+---
+
+
+<h2 class="padding-top-xlarge">{{page.long-title}}</h2>
+
+<ul class="tabs" id="example-tabs">
+  <li class="tabs-title "><a href="../new">Overview</a></li>
+  <li class="tabs-title is-active"><a aria-selected="true" href="../study">Study</a></li>
+  <li class="tabs-title"><a href="../data">Data files</a></li>
+  <li class="tabs-title"><a href="../samples">Samples</a></li>
+  <li class="tabs-title"><a href="../contacts">Contacts</a></li>
+  <li class="tabs-title"><a href="../submit">Submit</a></li>
+</ul>
+
+
+<form data-abide novalidate class="conditional-form" action="../data">
+  <!-- <fieldset required class="large-form padding-bottom-large padding-top-large">
+    <legend>Is your study on human research subjects?</legend>
+    <input type="radio" name="human" value="1" id="humanYes" required><label for="humanYes">Yes</label>
+    <input type="radio" name="human" value="1" id="humanNo"><label for="humanNo">No</label>
+  </fieldset>
+ -->
+
+
+  <div class="">
+    <fieldset required class="large-form padding-bottom-large padding-top-large">
+      <legend>Study</legend>
+      <label>Study title
+        <input type="text" placeholder="e.g. “Parallelism in Fish”" required pattern="alpha">
+        <span class="form-error">
+          Yo, you had better fill this out, it's required.
+        </span>
+      </label>
+
+      <label>Study description
+        <textarea rows="5" placeholder="..." required pattern="alpha"></textarea>
+        <span class="form-error">
+          Yo, you had better fill this out, it's required.
+        </span>
+      </label>
+
+      <label>Study short name
+        <input type="text" placeholder="e.g. “RAD sequencing - 2004 Liverpool”" required pattern="alpha">
+        For your reference. Will only show in your dashboard.
+        <span class="form-error">
+          Yo, you had better fill this out, it's required.
+        </span>
+      </label>
+    </fieldset>
+
+  </div>
+  <!-- <div class="conditional-div hidden" data-condition="humanNo:checked" data-condition-val="1">
+    Please proceed.
+  </div> -->
+
+
+
+
+
+
+  <div data-abide-error class="alert callout" style="display: none;">
+    <p><i class="fi-alert"></i> There are some errors in your form.</p>
+  </div>
+  <a class="button secondary-color white-background" href="#">Save &amp; exit</a>
+  <button class="button readmore" type="submit" value="Submit">Save &amp; continue</button>
+</form>
