@@ -18,6 +18,7 @@
   "homepage": "https://github.com/ebiwd/data-submissions-interface#readme",
   "devDependencies": {
     "browser-sync": "^2.18.12",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.8"
   }
 }

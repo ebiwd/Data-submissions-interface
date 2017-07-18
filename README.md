@@ -7,9 +7,10 @@ This is a collection of mockups for the USI/Data Submissions project
 
 If you're developing or doing many content edits, it's best to serve locally.
 
-1. Build changes with Jekyll:
+A. Build changes with Jekyll:
   - `jekyll build --watch`
-2. Live push changes to your browser with Browsersync (Optional):
+
+Or B. Live push changes to your browser with Browsersync:
   - Run the Jekyll command above
   - `npm install`
-  - `gulp`
+  - `gulp` (if Jekyll errors, then try `sudo gulp`)
