@@ -1,3 +1,17 @@
+/* file management */
+.submission-file-attach table {
+  width: 100%
+}
+.submission-file-attach table thead th {
+  padding: 0rem 0.2rem;
+}
+.submission-file-attach table thead,
+.submission-file-attach table tbody,
+.submission-file-attach table tfoot,
+.submission-file-attach table.no-stripe tbody tr:nth-child(even) {
+  background: none;
+}
+
 /* forms */
 fieldset {
   clear: both;
