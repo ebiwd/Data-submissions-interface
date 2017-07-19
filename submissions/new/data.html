@@ -12,14 +12,15 @@ order: 1
 <ul class="tabs" id="example-tabs">
   <li class="tabs-title "><a href="../new">Overview</a></li>
   <li class="tabs-title"><a href="../study">Study</a></li>
-  <li class="tabs-title is-active"><a aria-selected="true" href="../data">Data</a></li>
+  <li class="tabs-title is-active"><a aria-selected="true" href="../data">Data type</a></li>
+  <li class="tabs-title"><a href="../data-files">Data files</a></li>
   <li class="tabs-title"><a href="../samples">Samples</a></li>
   <li class="tabs-title"><a href="../contacts">Contacts</a></li>
   <li class="tabs-title"><a href="../submit">Submit</a></li>
 </ul>
 
 
-<form data-abide novalidate class="" action="../samples">
+<form data-abide novalidate class="" action="../data-files">
   <!-- <fieldset required class="large-form padding-bottom-large padding-top-large">
     <legend>Is your study on human research subjects?</legend>
     <input type="radio" name="human" value="1" id="humanYes" required><label for="humanYes">Yes</label>
@@ -79,106 +80,6 @@ order: 1
       </fieldset> -->
     </fieldset>
 
-    <fieldset required class="large-form">
-      <legend>Data files</legend>
-      <div class=" clearfix padding-top-large submission-file-attach">
-        <table class="small data-table no-stripe code">
-          <thead>
-            <tr>
-              <th width="5"></th>
-              <th width="200">File</th>
-              <th>Experiment library</th>
-              <th width="150">Date</th>
-              <th width="100">Size</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><i class="icon icon-functional" data-icon="/"></i></td>
-              <td><a href="#">sample_filename.fastq</a></td>
-              <td><a data-open="library-select-widget" href="#" onclick="return false;">Select a library</a></td>
-              <td>2017-07-19</td>
-              <td>
-                211 MB
-                <a href="#"><i class="icon icon-functional" data-icon="d"></i></a>
-              </td>
-            </tr>
-            <tr>
-              <td><i class="icon icon-functional" data-icon="/"></i></td>
-              <td><a href="#">sample_filename.fastq</a></td>
-              <td><a data-open="library-select-widget" href="#" onclick="return false;">Select a library</a></td>
-              <td>2017-07-19</td>
-              <td>
-                211 MB
-                <a href="#"><i class="icon icon-functional" data-icon="d"></i></a>
-              </td>
-            </tr>
-            <tr>
-              <td><i class="icon icon-functional" data-icon="/"></i></td>
-              <td><a href="#">sample_filename.fastq</a></td>
-              <td><a data-open="library-select-widget" href="#" onclick="return false;">Select a library</a></td>
-              <td>2017-07-19</td>
-              <td>
-                211 MB
-                <a href="#"><i class="icon icon-functional" data-icon="d"></i></a>
-              </td>
-            </tr>
-            <tr>
-              <td><i class="icon icon-functional" data-icon="/"></i></td>
-              <td><a href="#">sample_filename.fastq</a></td>
-              <td><a data-open="library-select-widget" href="#" onclick="return false;">Select a library</a></td>
-              <td>2017-07-19</td>
-              <td>
-                211 MB
-                <a href="#"><i class="icon icon-functional" data-icon="d"></i></a>
-              </td>
-            </tr>
-            <tr>
-              <td></td>
-              <td colspan="2"><a href="#" onclick="return false;" data-open="attach-file-widget" class=""><i class="icon icon-functional" data-icon="u"></i> Select a new file to attach</a></td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div class="columns small-12 padding-top-xlarge">
-
-        </div>
-      </div>
-
-
-      <div class="reveal" id="attach-file-widget" data-reveal>
-        <div class=" clearfix padding-top-xlarge adding-bottom-xlarge">
-          <div class="columns medium-10 medium-push-1">
-            <h4>Drag and drop a file here to upload</h4>
-            Or select a file from:
-            <ul>
-              <li>your computer</li>
-              <li>data you have previously uploaded</li>
-            </ul>
-            <div class="progress" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="Not started" aria-valuemax="100">
-              <span class="progress-meter" style="width: 1%">
-                <p class="progress-meter-text">No upload in progres</p>
-              </span>
-            </div>
-          </div>
-        </div>
-        <button class="close-button" data-close aria-label="Close modal" type="button">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-
-      <div class="reveal" id="library-select-widget" data-reveal>
-        <div class=" clearfix padding-top-xlarge adding-bottom-xlarge">
-          <div class="columns medium-10 medium-push-1">
-            <h4>Select a library</h4>
-          </div>
-        </div>
-        <button class="close-button" data-close aria-label="Close modal" type="button">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-    </fieldset>
-
   </div>
   <!-- <div class="conditional-div hidden" data-condition="humanNo:checked" data-condition-val="1">
     Please proceed.
@@ -197,9 +98,6 @@ order: 1
     <button class="button readmore" type="submit" value="Submit">Save &amp; continue</button>
   </div>
 </form>
-
-
-
 
 <link rel="stylesheet" href="//wwwdev.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/libraries/Choices/assets/styles/css/choices.min.css">
 <script src="//wwwdev.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/libraries/Choices/assets/scripts/dist/choices.min.js"></script>

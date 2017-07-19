@@ -16,7 +16,6 @@ $(document).ready(function() {
             conditionRequirement = $(this).data('condition-val') || 1;
 
         // handle wild card matches
-        console.log($(conditionTarget).val());
         if (conditionRequirement == '*' && $(conditionTarget).val() != null) {
           $(this).removeClass('hidden');
         } else if ($(conditionTarget).val() == conditionRequirement) {
