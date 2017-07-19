@@ -19,7 +19,7 @@ order: 1
 </ul>
 
 
-<form data-abide novalidate class="conditional-form" action="../samples">
+<form data-abide novalidate class="" action="../samples">
   <!-- <fieldset required class="large-form padding-bottom-large padding-top-large">
     <legend>Is your study on human research subjects?</legend>
     <input type="radio" name="human" value="1" id="humanYes" required><label for="humanYes">Yes</label>
@@ -29,23 +29,26 @@ order: 1
 
 
   <div class="columns medium-8">
-    <fieldset required class="large-form padding-bottom-large padding-top-large">
+    <fieldset required class="large-form padding-bottom-large padding-top-large conditional-form">
       <legend>Data type</legend>
       <label for="choices-multiple-remove-button">What type of data are you submitting?</label>
-      <select class="form-control" name="choices-multiple-remove-button" id="choices-multiple-remove-button" placeholder="This is a placeholder" multiple>
-      <option value="Dropdown item 1" selected>DNA - sequencing</option>
-      <option value="Dropdown item 2">Dropdown item 2</option>
-      <option value="Dropdown item 3">Dropdown item 3</option>
-      <option value="Dropdown item 4">Dropdown item 4</option>
+      <select class="form-control" name="data-type" id="data-type" placeholder="This is a placeholder" multiple>
+        <option value="Dropdown item 1" selected>DNA - sequencing</option>
+        <option value="Dropdown item 2">Dropdown item 2</option>
+        <option value="Dropdown item 3">Dropdown item 3</option>
+        <option value="Dropdown item 4">Dropdown item 4</option>
       </select>
 
-      <label for="choices-multiple-remove-button">And more specifically?</label>
-      <select class="form-control" name="choices-multiple-remove-button" id="choices-multiple-remove-button" placeholder="This is a placeholder" multiple>
-      <option value="Dropdown item 1" selected>Sequence reads</option>
-      <option value="Dropdown item 2">Dropdown item 2</option>
-      <option value="Dropdown item 3">Dropdown item 3</option>
-      <option value="Dropdown item 4">Dropdown item 4</option>
-      </select>
+
+      <div class="conditional-div hidden" data-condition="data-type" data-condition-val="*">
+        <label for="choices-multiple-remove-button">And more specifically?</label>
+        <select class="form-control" name="data-type-specific" id="data-type-specific" placeholder="This is a placeholder" multiple>
+          <option value="Dropdown item 1" selected>Sequence reads</option>
+          <option value="Dropdown item 2">Dropdown item 2</option>
+          <option value="Dropdown item 3">Dropdown item 3</option>
+          <option value="Dropdown item 4">Dropdown item 4</option>
+        </select>
+      </div>
 
       <!-- <label>Study title
         <input type="text" placeholder="e.g. “Parallelism in Fish”" required pattern="alpha">
@@ -76,9 +79,9 @@ order: 1
       </fieldset> -->
     </fieldset>
 
-    <fieldset required class="large-form padding-top-large">
+    <fieldset required class="large-form">
       <legend>Data files</legend>
-      <div class=" clearfix padding-top-xlarge adding-bottom-xlarge submission-file-attach">
+      <div class=" clearfix padding-top-large submission-file-attach">
         <table class="small data-table no-stripe code">
           <thead>
             <tr>
@@ -174,14 +177,6 @@ order: 1
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-
-
-      <p>[data-files]</p>
-        <p>[upload]</p>
-          <p>[projects]</p>
-    </fieldset>
-
-    <fieldset required class="large-form  padding-top-large">
     </fieldset>
 
   </div>
@@ -211,11 +206,13 @@ order: 1
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  var multipleCancelButton = new Choices('#choices-multiple-remove-button', {
+  var multipleCancelButton = new Choices('#data-type, #data-type-specific', {
     delimiter: ',',
     editItems: true,
     maxItemCount: 5,
     removeItemButton: true,
   });
 });
+
+
 </script>
