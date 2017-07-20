@@ -121,67 +121,34 @@ order: 1
       <div class="reveal" id="library-select-widget" data-reveal>
         <div class=" clearfix padding-top-xlarge adding-bottom-xlarge">
           <div class="columns">
+
             <h4>Select a library</h4>
-            <p>Please select an experiment library to assign to your data file, or use the button below to create a new library profile.
-            <table class="small data-table no-stripe ">
-              <!-- <thead>
+            <p>Please select an experiment library to assign to your data file, or use the button below to create a new library profile.</p>
+
+            <p><span class="label secondary-color">Experiment template librarys for</span> <span data-toggle="change-data-type" class="tag">DNA - sequencing, Sequence Reads</span></p>
+
+            <div class="dropdown-pane top" id="change-data-type" data-dropdown>
+              To change, update <a href="../data">your submission's data type</a>
+            </div>
+
+
+            <table class="  no-stripe ">
+              <thead>
                 <tr>
-                  <th width="5"></th>
-                  <th width="200">File</th>
-                  <th>Experiment library</th>
-                  <th width="150">Date</th>
-                  <th width="100">Size</th>
+                  <th width="200">Experiment library</th>
+                  <th width="150">Actions</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td><i class="icon icon-functional" data-icon="/"></i></td>
-                  <td><a href="#">sample_filename.fastq</a></td>
-                  <td><a data-open="library-select-widget" href="#" onclick="return false;">Select a library</a></td>
-                  <td>2017-07-19</td>
-                  <td>
-                    211 MB
-                    <a href="#"><i class="icon icon-functional" data-icon="d"></i></a>
-                  </td>
+                  <td>Sanger seq.</td>
+                  <td><a href="#">View &amp; use</a> | <a href="#">delete</a></td>
                 </tr>
                 <tr>
-                  <td><i class="icon icon-functional" data-icon="/"></i></td>
-                  <td><a href="#">sample_filename.fastq</a></td>
-                  <td><a data-open="library-select-widget" href="#" onclick="return false;">Select a library</a></td>
-                  <td>2017-07-19</td>
-                  <td>
-                    211 MB
-                    <a href="#"><i class="icon icon-functional" data-icon="d"></i></a>
-                  </td>
+                  <td colspan="2"><a href="#" onclick="return false;" data-open="attach-file-widget" class=""><i class="icon icon-functional" data-icon="u"></i> Create experiment library template</a></td>
                 </tr>
-                <tr>
-                  <td><i class="icon icon-functional" data-icon="/"></i></td>
-                  <td><a href="#">sample_filename.fastq</a></td>
-                  <td><a data-open="library-select-widget" href="#" onclick="return false;">Select a library</a></td>
-                  <td>2017-07-19</td>
-                  <td>
-                    211 MB
-                    <a href="#"><i class="icon icon-functional" data-icon="d"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td><i class="icon icon-functional" data-icon="/"></i></td>
-                  <td><a href="#">sample_filename.fastq</a></td>
-                  <td><a data-open="library-select-widget" href="#" onclick="return false;">Select a library</a></td>
-                  <td>2017-07-19</td>
-                  <td>
-                    211 MB
-                    <a href="#"><i class="icon icon-functional" data-icon="d"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td colspan="2"><a href="#" onclick="return false;" data-open="attach-file-widget" class=""><i class="icon icon-functional" data-icon="u"></i> Select a new file to attach</a></td>
-                </tr>
-              </tbody> -->
+              </tbody>
             </table>
-
-            [Table of files here]
 
           </div>
         </div>
